@@ -1,0 +1,14 @@
+{
+  "name": "roleflow",
+  "version": "1.0.0",
+  "description": "RoleFlow - Multi-Role Workplace Task and Team Management Platform",
+  "scripts": {
+    "dev:server": "cd server && npm run dev",
+    "dev:client": "cd client && npm run dev",
+    "install:all": "npm install && cd server && npm install && cd ../client && npm install",
+    "build:client": "cd client && npm run build"
+  },
+  "keywords": ["rbac", "management", "react", "express", "postgresql"],
+  "author": "RoleFlow Team",
+  "license": "MIT"
+}
