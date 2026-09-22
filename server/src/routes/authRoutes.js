@@ -23,6 +23,6 @@ router.post('/login', validate(loginSchema), authController.login);
 router.get('/me', authenticate, authController.getMe);
 router.patch('/profile', authenticate, validate(updateProfileSchema), authController.updateProfile);
 router.post('/change-password', authenticate, validate(changePasswordSchema), authController.changePassword);
-router.post('/logout', authenticate, authController.logout);
+router.post('/logout', authController.logout);
 
 export default router;
